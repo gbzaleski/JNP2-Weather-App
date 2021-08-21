@@ -5,7 +5,7 @@ React application that connects to the Weather API and allows for forecasts sear
 Create an application that connects to the [Weather API](https://www.weatherapi.com/) and allows for forecasts search. Requirements:
 
 - Don't use external design systems - create styled-components by yourself. Aesthetics won't be rated, only components decomposition. You can even use existing CSS (e.g., from bootstrap or material) and copy it to your components. The website doesn't have to be responsive or support mobile in any way
-- Forecast search options:
+- Forecast search options: \
       - search forecast by city, autocomplete city name:
         - [autocomplete API](https://www.weatherapi.com/docs/#apis-search/)
         - [react-autocomplete](https://github.com/reactjs/react-autocomplete) (you can use the library of your choice)
