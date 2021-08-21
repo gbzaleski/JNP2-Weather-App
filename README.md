@@ -62,43 +62,43 @@ All work was done with most common good programming practices such as:
      and arrow function for everything else.
 
 # Project features (Redux, in Polish):
-[5 pts] redux structure:
+[5 pts] redux structure: \
 Dodałem strukturę reduxów pod każdy aspekt projektu (tj. gify, podpowiedzi lokacji, themowanie (dark/regular theme), długość prognozy (current / daily / hourly), wysyłanie zapytań o pogodę)
 
-[5 pts] epics and selectors usage
+[5 pts] epics and selectors usage \
 Do w/w reduxów są epici i selectory.
 
-[5 pts] code structure: clear containers and components distinction && [3 pts] code style
+[5 pts] code structure: clear containers and components distinction && [3 pts] code style \
 Podzieliłem projekty na moduły (folder pod każdy złożony feature ze swoim reduxem, akcjami, selectorami etc.) + folder na elementy Reacta do wyświetlania. Dodatkowo zastanawiałem się nie pokroić pliku ze styled elements na mniejsze ale uznałem że analogicznie jak typowy plik css będzie czytelniej i wygodniej trzymać je razem.
 Dodatkowe projekt zawiera spójny i optymalny styl wcięć, użycia średników, klamer, funkcji zwykłych (elementy Reacta) i strzałkowych (wszystkie inne - mniejsze funkcjonalności), użycia constów i defaultów,  nazewnictwa i importów.
 
-[5 pts] search by city
+[5 pts] search by city \
 Dodane, użycie przez epica w weather, feature wykorzystuje Weather API.
 
-[5 pts] search by user geolocation
+[5 pts] search by user geolocation \
 Dodane (funkcja w LocationButton), via wbudowana funkcja JS - jak sprawdzałem funkcja może nie działać na niektórych wersjach starszych przeglądarek - wtedy wyświetla się stosowny komunikat. (U mnie na Chromie wszystko działa poprawnie).
 
-[3 pts] forecast version switch with loader
+[3 pts] forecast version switch with loader \
 Wykorzystałem dołączony do zadania framework loader.
 
-[3 pts] nice weather classification
+[3 pts] nice weather classification \
 Została zaimplementowana odpowiednia analiza otrzymanych wyników przez weather API.
 
-[5 pts] gif support
+[5 pts] gif support \
 Po zapytaniu do Weather API zostaje wysłane zapytanie do Tenor API o adresy URL do gifów, które następnie są wyświetlane na stronie.
 
-[3 pts] gif switching
+[3 pts] gif switching \
 Został dodany prosty epic przesuwający wskaźnik na tablicy gifów co 30 sekundowy interwał.
 
-[5 pts] light/dark mode
+[5 pts] light/dark mode \
 Tutaj za wiele się nie zmieniło po prostu przycisk zmienia stan w reduxie do themingu a nie useState.
 
-[3 pts] search results caching
+[3 pts] search results caching \
 Następuje zapisanie wszystków gifów zwracanych przez Tenora i potem wybieranie innego co 30s, zamiast kolejnych zapytań.
 
-[] Autocomplete
+[] Autocomplete \
 Projekt zawiera tak jak poprzedni system podpowiedzi do uzupełniania nazwy lokacji.
 
-[] Icons
+[] Icons \
 Przy wyświetlaniu pogody z wieloma wynikami (Hourly / Daily) jako wizualizacja
 
