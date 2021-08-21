@@ -6,10 +6,10 @@ Create an application that connects to the [Weather API](https://www.weatherapi.
 
 - Don't use external design systems - create styled-components by yourself. Aesthetics won't be rated, only components decomposition. You can even use existing CSS (e.g., from bootstrap or material) and copy it to your components. The website doesn't have to be responsive or support mobile in any way
 - Forecast search options: \
-      - search forecast by city, autocomplete city name:
-        - [autocomplete API](https://www.weatherapi.com/docs/#apis-search/)
-        - [react-autocomplete](https://github.com/reactjs/react-autocomplete) (you can use the library of your choice)
-      - forecast for the [user's geolocation](https://www.w3schools.com/html/html5_geolocation.asp) (we assume that the user always accepts geolocalization access query)
+      - search forecast by city, autocomplete city name: \
+        - [autocomplete API](https://www.weatherapi.com/docs/#apis-search/) \
+        - [react-autocomplete](https://github.com/reactjs/react-autocomplete) (you can use the library of your choice) \
+      - forecast for the [user's geolocation](https://www.w3schools.com/html/html5_geolocation.asp) (we assume that the user always accepts geolocalization access query) \
       - switch for choosing forecast option type: [Realtime data](https://www.weatherapi.com/docs/#apis-realtime) (refreshed every 15 minutes), [Daily Forecast](https://www.weatherapi.com/docs/#apis-forecast) for 3 days and [Hourly Forecast](https://www.weatherapi.com/docs/#apis-forecast)
   - results should be cached until page refresh - if a user queries for the same parameters, data should be taken from redux instead of API call
   - show loader while the search is in progress, you can use an [external library](https://github.com/mhnpd/react-loader-spinner)
